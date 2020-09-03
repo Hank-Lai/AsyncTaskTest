@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button testbtn = null;
     private Button changebtn = null;
+    private Button webbtn = null;
     private ProgressBar progressBar;
 
     @Override
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progress_bar);
         this.testbtn = (Button) this.findViewById(R.id.button);
         this.changebtn = this.findViewById(R.id.button1);
+        this.webbtn = this.findViewById(R.id.button2);
         this.testbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, RecyclerActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        this.webbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, WebActivity.class);
                 startActivity(intent);
 
             }

@@ -27,5 +27,10 @@
         android:layout_height="wrap_content"
         android:text="切換頁面"
         />
+    <Button android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="雲端數位網"
+        />
 
 </LinearLayout>
